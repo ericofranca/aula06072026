@@ -48,5 +48,8 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Runs a single command using the runners shell
-    - name: Send greeting
-      run: echo "Hello ${{ inputs.name }}"
+    - name: Criar Pasta
+      run: mkdir "${{ inputs.nome_pasta }}"
+           cd "${{ inputs.mensagem }}"
+           echo "print(${{ inputs.nome_ficheiro }})" > ${{ inputs.nome_ficheiro }}
+          python ${{ inputs.nome_ficheiro }}
