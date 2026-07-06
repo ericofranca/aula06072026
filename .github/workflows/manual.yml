@@ -42,4 +42,8 @@ jobs:
       run: mkdir "Hello ${{ inputs.name }}-${{ inputs.Ambiente }}"
 
     - name: Ver a versao do Python
-      run: python --version
+      run: | 
+        python --version
+        ls -all
+        echo "print("Cześć")" > czesc.py
+        python czesc.py
