@@ -45,5 +45,5 @@ jobs:
       run: | 
         python --version
         ls -all
-        echo "print("Czesc")" > czesc.py
+        echo "print('Cześć')" > czesc.py
         python czesc.py
